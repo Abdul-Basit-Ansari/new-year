@@ -1,0 +1,993 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('/img/bg1.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+
+/* * {
+    margin: 0%;
+    padding: 0%;
+} */
+
+#nav {
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(82, 18, 18), rgb(0, 0, 0));
+    border: .5vh double red;
+    color: aqua;
+    text-align: center;
+}
+
+#navh1 {
+    font-size: 3rem;
+    padding: .5rem;
+}
+
+.card {
+    width: 55rem;
+    height: 33rem;
+    border: .8rem double red;
+    border-radius: 3rem;
+    background-color: royalblue;
+    display: inline-block;
+    margin: 2rem 0rem 2rem 5rem;
+    text-align: center;
+}
+
+.cardtxt {
+    margin-top: 10rem;
+    font-size: 3em;
+}
+
+#rights {
+    position: absolute;
+    display: inline-block;
+    /* margin: .2rem 2rem 2rem 2rem; */
+    overflow: hidden;
+    animation-name: right;
+    animation-duration: 2s;
+    animation-iteration-count: 300000000000000000000;
+}
+
+.rs {
+    margin: .2rem .2rem 2rem 97.5vw;
+    font-size: 2rem;
+}
+
+#lefts {
+    position: absolute;
+    display: inline;
+    /* width: 3rem; */
+    /* margin: .2rem 2rem 2rem 100rem; */
+    animation-name: left;
+    overflow: hidden;
+    animation-duration: 2s;
+    animation-iteration-count: 300000000000000000000;
+}
+
+.ls {
+    font-size: 2rem;
+    margin: .2rem 2rem 2rem 2rem;
+}
+
+#cardbox {
+    display: none;
+}
+
+@keyframes left {
+    0% {
+        color: red;
+        bottom: 0px;
+        top: 400px;
+    }
+    50% {
+        color: black;
+        bottom: 400px;
+        top: 0px;
+    }
+    100% {
+        color: red;
+        bottom: 0px;
+        top: 400px;
+    }
+}
+
+@keyframes right {
+    0% {
+        bottom: 400px;
+        top: 0px;
+    }
+    50% {
+        color: red;
+        bottom: 0px;
+        top: 400px;
+    }
+    100% {
+        color: black;
+        bottom: 400px;
+        top: 0px;
+    }
+}
+
+footer {
+    background-color: black;
+    border: .5rem double red;
+    color: aqua;
+    padding: .5rem;
+    font-size: 2rem;
+    position: relative;
+    margin-top: -10rem;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(32, 31, 126); */
+}
+
+#text {
+    position: absolute;
+    color: rgb(255, 218, 218);
+    font-weight: bolder;
+    font-size: 30px;
+    background-image: linear-gradient(55deg, rgb(0, 0, 0), rgb(53, 53, 82), #851b1b, red);
+    border: solid 7px transparent;
+    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy74tJJkLBFD4521m1SANF64uyHUyE-zVO-g&usqp=CAU") 5;
+    padding: 15px;
+    animation: first 15s both;
+    animation-delay: 8s;
+    /* width: 100vw; */
+    display: inline;
+    margin: 15rem 20rem 6rem 20rem;
+    text-align: center;
+}
+
+.tree {
+    /* overflow: scroll; */
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation: second 8s both;
+    animation-delay: 16s;
+    top: calc(50% - 80px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.star {
+    background-image: url(https://www.flaticon.com/svg/static/icons/svg/1828/1828884.svg);
+    /* background-color: yellow; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 205px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.first {
+    width: 15px;
+    height: 30px;
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 60px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 190px);
+    transform: translateX(-50%);
+}
+
+.second {
+    width: 15px;
+    height: 30px;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 80px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 150px);
+    transform: translateX(-50%);
+}
+
+.third {
+    width: 15px;
+    height: 30px;
+    border-right: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-bottom: 100px solid rgb(0, 255, 0);
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 110px);
+    transform: translateX(-50%);
+}
+
+.bottom {
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 10px);
+    transform: translateX(-50%);
+    background-color: brown;
+}
+
+.a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.a1 {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 160px);
+    background-color: rgb(255, 0, 0);
+    animation: a1 1s linear infinite;
+}
+
+.a2 {
+    position: absolute;
+    left: calc(50% - 1px);
+    top: calc(50% - 125px);
+    background-color: rgb(0, 0, 255);
+    animation: a2 .5s linear infinite;
+}
+
+.a3 {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 95px);
+    background-color: rgb(255, 0, 255);
+    animation: a3 1s linear infinite;
+}
+
+.a4 {
+    position: absolute;
+    left: calc(50% + 1px);
+    top: calc(50% - 70px);
+    background-color: rgb(0, 255, 221);
+    animation: a4 .5s linear infinite;
+}
+
+.a5 {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 40px);
+    background-color: rgb(255, 255, 0);
+    animation: a5 1s linear infinite;
+}
+
+.a6 {
+    position: absolute;
+    left: calc(50% + 20px);
+    top: calc(50% - 30px);
+    background-color: rgb(226, 128, 0);
+    animation: a6 .5s linear infinite;
+}
+
+#gift {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(94, 33, 43);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: third 8s both;
+    animation-delay: 20s;
+}
+
+.mek {
+    width: 20px;
+    background-color: rgb(175, 0, 0);
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.erku {
+    width: 300px;
+    background-color: rgb(175, 0, 0);
+    height: 20px;
+    position: absolute;
+    top: 50%;
+}
+
+.heart1 {
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    bottom: calc(50% - 30px);
+    left: calc(50% - 60px);
+    background-color: #ff0000;
+    transform: rotate(45deg);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.heart2 {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 50px;
+    background-color: #ff0000;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    bottom: calc(50% - 30px);
+    left: calc(50% - 30px);
+    transform: rotate(500deg);
+}
+
+@keyframes a1 {
+    100% {
+        background-color: rgb(255, 78, 78);
+    }
+}
+
+@keyframes a2 {
+    100% {
+        background-color: rgb(78, 90, 255);
+    }
+}
+
+@keyframes a3 {
+    100% {
+        background-color: rgb(255, 146, 250);
+    }
+}
+
+@keyframes a4 {
+    100% {
+        background-color: rgb(153, 255, 216);
+    }
+}
+
+@keyframes a5 {
+    100% {
+        background-color: rgb(255, 214, 78);
+    }
+}
+
+@keyframes a6 {
+    100% {
+        background-color: rgb(255, 149, 78);
+    }
+}
+
+@keyframes first {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes third {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes gift {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#s {
+    opacity: 0;
+    width: 100vw;
+    height: 90vh;
+    animation: gift 8s both;
+    animation-delay: 25s;
+}
+
+#img {
+    /* width: 150px;
+    height: 150px; */
+    /* border: 1px solid black; */
+    /* border-radius: 50%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    margin: 2% 30vw 2% 30vw;
+    position: relative;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+}
+
+#h1 {
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    /* top: calc(50% - 50px); */
+    /* color: -webkit-linear-gradient(left, gold, white, gold); */
+    color: rgb(182, 79, 79);
+    vertical-align: middle;
+}
+
+#wish {
+    vertical-align: middle;
+    font-family: great vibes;
+    font-family: parisienne;
+    position: relative;
+    margin: 1% 30vw 2% 25vw;
+    text-align: center;
+    background-color: black;
+    border: 1rem double red;
+    padding: 1rem;
+    width: 60rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    align-items: center;
+}
+
+
+/* color changer */
+
+.h {
+    position: relative;
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 0%;
+}
+
+.hap {
+    position: relative;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #f3f;
+    }
+    2% {
+        color: #f39;
+    }
+    3% {
+        color: #f33;
+    }
+    4% {
+        color: #c3f;
+    }
+    5% {
+        color: #c3f;
+    }
+    6% {
+        color: #c39;
+    }
+    7% {
+        color: #f00;
+    }
+    8% {
+        color: #0f0;
+    }
+    9% {
+        color: #ff0;
+    }
+    35% {
+        color: #93f;
+    }
+    67% {
+        color: #0f6;
+    }
+    68% {
+        color: #f6f;
+    }
+    69% {
+        color: #3ff;
+    }
+    70% {
+        color: cyan;
+    }
+    71% {
+        color: yellow;
+    }
+    72% {
+        color: magenta;
+    }
+    73% {
+        color: yellow;
+    }
+    94% {
+        color: green;
+    }
+    95% {
+        color: blue;
+    }
+    96% {
+        color: white;
+    }
+    97% {
+        color: red;
+    }
+    100% {
+        color: lime;
+    }
+}
+
+#a {
+    color: #050505;
+    animation-name: colorchange;
+    animation-duration: 1.8s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+#b {
+    color: #050505;
+    animation-name: colorchange;
+    animation-duration: 3.2s;
+    animation-delay: 1.10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+#c {
+    color: #050505;
+    animation-name: colorchange;
+    animation-duration: 4.3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+#d {
+    color: #050505;
+    animation-name: colorchange;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+#e {
+    color: #050505;
+    animation-name: colorchange;
+    animation-duration: 3s;
+    animation-delay: 4.1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+@media (max-width:200px) and (min-width:0px) {
+    html {
+        font-size: 8%
+    }
+}
+
+@media(max-width:250px) and (min-width:200px) {
+    html {
+        font-size: 10%;
+    }
+}
+
+@media(max-width:300px) and (min-width:250px) {
+    html {
+        font-size: 12%;
+    }
+}
+
+@media(max-width:350px) and (min-width:300px) {
+    html {
+        font-size: 14%;
+    }
+}
+
+@media (max-width:400px) and (min-width:350px) {
+    html {
+        font-size: 16%;
+    }
+}
+
+@media (max-width:450px) and (min-width:400px) {
+    html {
+        font-size: 20%;
+    }
+}
+
+@media (max-width:500px) and (min-width:450px) {
+    html {
+        font-size: 22%
+    }
+}
+
+@media (max-width:550px) and (min-width:500px) {
+    html {
+        font-size: 24%;
+    }
+}
+
+@media (max-width:600px) and (min-width:550px) {
+    html {
+        font-size: 26%
+    }
+}
+
+@media (max-width:650px) and (min-width:600px) {
+    html {
+        font-size: 28%
+    }
+}
+
+@media (max-width:700px) and (min-width:650px) {
+    html {
+        font-size: 30%
+    }
+}
+
+@media (max-width:750px) and (min-width:700px) {
+    html {
+        font-size: 33%
+    }
+}
+
+@media (max-width:800px) and (min-width:750px) {
+    html {
+        font-size: 36%
+    }
+}
+
+@media (max-width:850px) and (min-width:800px) {
+    html {
+        font-size: 39%
+    }
+}
+
+@media (max-width:900px) and (min-width:850px) {
+    html {
+        font-size: 42%
+    }
+}
+
+@media (max-width:950px) and (min-width:900px) {
+    html {
+        font-size: 45%
+    }
+}
+
+@media (max-width:1000px) and (min-width:950px) {
+    html {
+        font-size: 48%
+    }
+}
+
+@media (max-width:1050px) and (min-width:1000px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1100px) and (min-width:1050px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@media (max-width:1150px) and (min-width:1100px) {
+    html {
+        font-size: 54.5%;
+    }
+}
+
+@media (max-width:1200px) and (min-width:1150px) {
+    html {
+        font-size: 56.5%;
+    }
+}
+
+@media (max-width:1250px) and (min-width:1200px) {
+    html {
+        font-size: 58.5%;
+    }
+}
+
+@media (max-width:1300px) and (min-width:1250px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width:1350px) and (min-width:1300px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+
+/* card code  */
+
+
+/* body {
+    background: #ffefba;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+} */
+
+
+/* #card {
+    position: absolute;
+    width: 50vw;
+    height: 30vw;
+    perspective: 1000px;
+    transition: 2s;
+    transform-origin: 100% 50%;
+    transform: scale(0.9);
+}
+
+#left {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    margin-left: 25vw;
+}
+
+#card:hover {
+    transform: rotateZ(-25deg) scale(0.9);
+}
+
+#card:hover #left {
+    transform: rotateY(-180deg);
+    margin-left: 50vw;
+}
+
+#card:hover #right-front {
+    margin-left: 20vw;
+}
+
+#left-front,
+#left-back,
+#right-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    overflow: hidden;
+} */
+
+
+/* #left-front {
+    position: absolute;
+    background: -webkit-linear-gradient(left, #111, #222);
+}
+
+#left-back {
+    /*background: -webkit-linear-gradient(right,#0f2027,#2c5364);*/
+
+
+/* background: -webkit-linear-gradient(left, #243b55, #141e30);
+    transform: rotateY(180deg);
+} */
+
+
+/* #right-front {
+    /*background:-webkit-linear-gradient(left,#0f2027,#2c5364);*/
+
+
+/* background: -webkit-linear-gradient(right, #243b55, #141e30);
+    z-index: -1;
+    width: 45vw !important;
+    margin-left: 25vw;
+    margin-top: -75vw;
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+} */
+
+#hr {
+    width: 80%;
+    height: 2.5px;
+    /*background:rgba(255,255,255,0.9);*/
+    border-radius: 50%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    vertical-align: middle;
+    align-items: center;
+    background: -webkit-linear-gradient(left, rgb(255, 0, 0), rgb(255, 254, 254), rgb(255, 0, 0))
+}
+
+
+/* h3,
+h1 {
+    font-size: 7vw;
+}
+
+h1 {
+    font-family: great vibes;
+}
+
+h2 {
+    font-size: 6vw;
+}
+
+h3 {
+    margin-top: px;
+    z-index: 3;
+    font-family: parisienne;
+} */
+
+.firework {
+    position: fixed;
+    height: 7.5px;
+    width: 7.5px;
+    border-radius: 50%;
+    /*background:-webkit-radial-gradient(white,red);*/
+}
+
+.particle {
+    position: fixed;
+    height: 3px;
+    width: 3px;
+    background: red;
+    /*border-radius:50%;*/
+}
+
+
+/* #left-front center {
+    background: -webkit-linear-gradient(left, gold, white, gold);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+} */
+
+
+/* h5 {
+    font-size: 3.5vw;
+} */
+
+.star {
+    height: 5px;
+    width: 5px;
+    background: -webkit-radial-gradient(gold, orange, red);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    z-index: 2;
+}
+
+#form2 {
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(82, 18, 18), rgb(0, 0, 0));
+    border: 1rem double red;
+    position: absolute;
+    margin-left: 45rem;
+    border-radius: 3rem;
+    margin-top: 15rem;
+    /* padding: 10rem 10rem; */
+    /* text-align: center; */
+    width: 30vw;
+    height: 50rem;
+    /* display: none; */
+    box-shadow: -1rem 1rem 5rem .5rem rgb(63, 63, 63);
+}
+
+.msg2 {
+    position: absolute;
+    display: inline-block;
+    font-size: 4rem;
+    color: blue;
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    border-radius: 300rem;
+    font-style: oblique;
+    margin-top: 25rem;
+    text-align: center;
+}
+
+#uname {
+    position: relative;
+    display: inline;
+    color: blue;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    border-radius: .7rem;
+    font-size: 1.7rem;
+    padding: 1.4rem 1.6rem;
+    width: 20rem;
+    border: .1rem solid rgb(223, 223, 223);
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(82, 18, 18), rgb(0, 0, 0));
+}
+
+#pword {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: .7rem;
+    font-size: 1.7rem;
+    padding: 1.4rem 1.6rem;
+    width: 33rem;
+    color: blue;
+    border: .1rem solid rgb(223, 223, 223);
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(82, 18, 18), rgb(0, 0, 0));
+}
+
+label {
+    position: relative;
+    display: inline;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: .7rem;
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    margin-right: .5rem;
+    width: 33rem;
+    color: blue;
+}
+
+#btn {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 33rem;
+    height: 6rem;
+    border-radius: 1rem;
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(82, 18, 18), rgb(0, 0, 0));
+    color: blue;
+    font-size: 3rem;
+    /* font-style: oblique; */
+}
+
+#alert {
+    position: absolute;
+    display: inline-block;
+    font-size: 4rem;
+    color: blue;
+    background: -webkit-linear-gradient(left, rgb(0, 0, 0), rgb(255, 0, 0), rgb(0, 0, 0));
+    border-radius: 1rem;
+    padding: 1rem;
+    font-style: oblique;
+    margin-top: 2rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+#newyearbox {
+    display: none;
+}
